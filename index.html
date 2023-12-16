@@ -23,17 +23,25 @@
 
 
 
-    <section class="parallax">
-        <img src="/assets/img/hill1.png" alt="hill1" id="hill1">
-        <img src="/assets/img/hill2.png" alt="hill2">
-        <img src="/assets/img/hill3.png" alt="hill3">
-        <img src="/assets/img/hill4.png" alt="hill4" id="hill4">
-        <img src="/assets/img/hill5.png" alt="hill5" id="hill5">
-        <img src="/assets/img/tree.png" alt="tree">
-        <img src="/assets/img/leaf.png" alt="leaf" id="leaf">
-        <h2 id="text">Birds for EVERYONE website.</h2>
-        <img src="/assets/img/plant.png" alt="plant">
-    </section>
+
+    <div class="banner">
+        <img class="layer-1" src="/assets/img/hill1.png">
+        <img class="layer-2" src="/assets/img/hill2.png">
+        <img class="layer-3" src="/assets/img/hill3.png">
+
+        <div class="layer-3">
+            <h1>Birds for EVERYONE website.</h1>
+        </div>
+
+        <img class="layer-4" src="/assets/img/leaf.png">
+        <img class="layer-5" src="/assets/img/tree.png">
+
+
+
+        <img class="layer-6" src="/assets/img/hill4.png">
+        <img class="layer-7" src="/assets/img/hill5.png">
+        <img src="/assets/img/plant.png">
+    </div>
 
 
     <section class="sec">
@@ -146,7 +154,6 @@
         </p>
     </section>
 
-    <script src="/script.js"> </script>
 
     <script type="text/javascript">
 
@@ -155,6 +162,8 @@
         let layer_3 = document.querySelector('.layer-3');
         let layer_4 = document.querySelector('.layer-4');
         let layer_5 = document.querySelector('.layer-5');
+        let layer_6 = document.querySelector('.layer-6');
+        let layer_7 = document.querySelector('.layer-7');
         
         window.onscroll = function () {
             let Y = window.scrollY;
@@ -164,6 +173,8 @@
             layer_3.style.transform = 'translateY('+ Y/1.5 +'px)';
             layer_4.style.transform = 'translateY('+ Y/2 +'px)';
             layer_5.style.transform = 'translateY('+ Y/3 +'px)';
+            layer_6.style.transform = 'translateY('+ Y/2 +'px)';
+            layer_7.style.transform = 'translateY('+ Y/3 +'px)';
             
         }
 
