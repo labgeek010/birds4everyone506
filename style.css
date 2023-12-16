@@ -158,11 +158,9 @@ header{
 
 @media ( orientation: portrait) {
     .banner {
-        height: 95vh;
+        height: 50vh;
     }
-    .parallax {
-        height: 95vh;
-    }
+   
     .layer-1 {
         bottom: 9vw;
     }
