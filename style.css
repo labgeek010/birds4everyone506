@@ -9,10 +9,11 @@ html {
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
 }
 
 body {
-    background: #f9f9f9;
+    background: #0b6956;
     min-height: 100vh;
     color: white;
     overflow-x:hidden ;
@@ -21,7 +22,7 @@ body {
 
 .banner {
     width: 100%;
-    height: 100vh;
+    height: 85vh;
     position: relative;
     display: flex;
     justify-content: center;
@@ -65,15 +66,16 @@ p {
 
 .layer-3 {
     position: absolute;
+   
 }
 
 .layer-3 h1 {
-    margin-top: 150px;
+    z-index: 2;
 }
 
 .layer-3 p {
     width: 600px;
-    max-width: 76vw;
+    max-width: 75vw;
     text-indent: 0;
     text-align: center;
     font-size: 14px;
@@ -81,7 +83,7 @@ p {
 }
 
 .layer-3 a {
-    background-color: #1a1a41;
+    background-color: #255a3c;
     display: block;
     width: 140px;
     height: 40px;
@@ -96,42 +98,148 @@ p {
 
 /* this is the day styles section*/
 
-header{
-    position: absolute;
-    top: 0;
-    left: 0;
+nav {
+    position: sticky;
+    background: #0b6956;
+    height: 80px;
     width: 100%;
-    padding: 30px 100px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    z-index: 100;
+    position: relative;
+    z-index: 2;
 }
 
-.logo {
-    font-size: 2rem;
-    color: #72f2b2;
-    pointer-events: none;
-    margin-right: 33%;
+label.logo {
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
 }
 
-.navigation a {
-    text-decoration: none;
-    color: #5bba8a;
-    padding: 6px 15px;
-    border-radius: 0 20px;
-    margin: 0 10px;
-    font-weight: 600;
+.logo img {
+    background: white;
+    border-radius: 25%;
+    font-size: large;
+    width: 138px;
+    left: 10px;
+    top: 5px;
 }
 
+label i {
+    color: black;
+}
 
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
 
-.navigation a:hover, 
-.navigation a.active {
-    background: #5bba8a; 
-    color: #fff;
+nav ul li { 
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 10px  0;
+    text-transform: uppercase;
+}
+
+a.active, a:hover {
+    background: #4d9788;
+    transition: .5s;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+.checkbtn i{
+    color: white;
+}
+
+@media (max-width: 952px) {
+
+    
+
+    label.logo {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width:858px){
+    .checkbtn{
+        display: block;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 35vh;
+        background: rgba(1, 100, 77, 0.4);
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    .banner {
+        height: 45vh;
+    }
+   
+    
+
+    nav ul li {
+        display: block;
+
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    a:hover, a.active {
+       background: none;
+       color: #72f2b2; 
+    }
+
+    #check:checked ~ ul {
+        left: 0;
+    }
+
+    .logo img {
+        background: white;
+        border-radius: 25%;
+        font-size: large;
+        width: 133px;
+        left: 10px;
+        top: 5px;
+    }
+
+    .banner {
+        background: #0b6956;
+        margin-top: 10px;
+    }
+
 
 }
+
 
 
 
@@ -158,17 +266,20 @@ header{
 
 @media ( orientation: portrait) {
     .banner {
-        height: 50vh;
+        height: 45vh;
     }
    
     .layer-1 {
-        bottom: 15vw;
+        bottom: 11vw;
+    }
+    .layer-3 {
+        bottom: 9vw;
     }
     .layer-4 {
-        bottom: 6vw;
+        bottom: 13vw;
     }
     .layer-5 {
-        bottom: 2vw;
+        bottom: 10vw;
     }
    
 }
