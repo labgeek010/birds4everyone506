@@ -169,6 +169,29 @@ a.active, a:hover {
     color: white;
 }
 
+
+
+
+
+.sec {
+    position: relative;
+    background: #003329;
+    padding: 100px;
+}
+
+.sec h2 {
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.sec p {
+    font-size: 1em;
+    color: gainsboro;
+    font-weight: 300;
+}
+
+
 @media (max-width: 952px) {
 
     
@@ -239,30 +262,28 @@ a.active, a:hover {
         margin-top: 10px;
     }
 
+    .sec {
+        position: relative;
+        background: #003329;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .sec h2 {
+        font-size: 1.2rem;
+        color: #fff;
+        margin-bottom: 10px;
+    }
+
+    .sec h1 {
+        font-size: 2rem;
+        color: #fff;
+        margin-bottom: 10px;
+    }
+
 
 }
 
-
-
-
-
-.sec {
-    position: relative;
-    background: #003329;
-    padding: 100px;
-}
-
-.sec h2 {
-    font-size: 3rem;
-    color: #fff;
-    margin-bottom: 10px;
-}
-
-.sec p {
-    font-size: 1em;
-    color: gainsboro;
-    font-weight: 300;
-}
 
 /* others styles section*/
 
