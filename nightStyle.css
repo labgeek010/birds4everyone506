@@ -67,7 +67,6 @@ p {
 .layer-3 {
     position: absolute;
     color: #c4c3d4;
-    background: ;
    
 }
 
@@ -83,6 +82,8 @@ p {
     text-align: center;
     font-size: 14px;
     transform: translateY(-20px);
+    background: rgba(0, 0, 1, 0.7);
+    border-radius: 5%;
 }
 
 .layer-3 a {
@@ -150,7 +151,7 @@ nav ul li a {
 }
 
 a.active, a:hover {
-    background: #1a1a41;
+    background: #552661;
     transition: .5s;
 }
 

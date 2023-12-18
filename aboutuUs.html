@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birds for EVERYONE</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+
+
+    <header class="header">
+        
+
+        <nav>
+            <input type="checkbox" id="check">
+            
+            <label for="check" class="checkbtn">
+    
+                <i class='bx bx-menu'></i>
+    
+            </label>
+    
+            <label class="logo"><a href="/index.html" class="logo"><img src="/assets/img/translogo.png" alt=""></a>  </label>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="night.html">Services</a></li>
+                <li><a href="aboutuUs.html" class="active">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+    
+        </nav>
+        
+
+    </header>
+
+
+
+
+
+    <div class="banner">
+        <img class="layer-1" src="/assets/img/hill1.png">
+        <img class="layer-2" src="/assets/img/hill2.png">
+        <img class="layer-2" src="/assets/img/hill3.png">
+        
+
+        <img class="layer-4" src="/assets/img/leaf.png">
+        <img class="layer-6" src="/assets/img/tree.png">
+        <img class="layer-5" src="/assets/img/hill4.png">
+        <img class="layer-7" src="/assets/img/hill5.png">
+        <div class="layer-3">
+            <h1>Know more about Us</h1>
+            <a href="#teks">Get Started</a>
+        </div>
+        <img src="/assets/img/plant.png">
+        
+
+    </div>
+
+    <div class="sec" id="teks">
+        <h1>Discover Costa Rica's birds with us.</h1>
+        
+
+            <h2>Birdwatching Experience in Costa Rica:</h2>
+            <p>"Discover the unique charm of Costa Rica's birdwatching through the lens of Birds for EVERYONE. Immerse yourself in lush landscapes and diverse ecosystems while guided by Beto, a seasoned expert with over 15 years of experience. 
+                Uncover the extraordinary world of Costa Rican birds in their natural habitats."</p>
+
+
+            <h1>Discover Costa Rica's flying treasures:</h1>
+
+            <h2>What makes Costa Rica a special destination for birdwatching:
+            </h2>
+            <p>"Costa Rica stands as a birdwatching haven, boasting a remarkable array of over 900 bird species. 
+                Nestled between the Caribbean and Pacific coasts, this biodiverse paradise offers a unique blend of ecosystems, 
+                making it a prime destination for avid bird enthusiasts."</p>
+
+            <h2>Diverse Bird Species in Costa Rica:</h2>
+            <p>"Costa Rica is home to a spectacular variety of bird species, from vibrant toucans and resplendent quetzals to rare hummingbirds and majestic eagles. 
+                Each region, including Monteverde, Osa, Rincon de la Vieja, and Braulio Carrillo, unveils its own avian wonders, creating an unparalleled birdwatching experience."
+            </p>
+
+            <h1>To all our Visitors:</h1>
+            <p>"Plan your extraordinary birdwatching journey with Birds for EVERYONE. 
+                Contact us via WhatsApp at #70473306 or explore more on our Instagram page: Birds for EVERYONE Tours. Your Costa Rican adventure awaits!"
+            </p>
+
+            <h2>Additional Tips for Bird Enthusiasts:</h2>
+            <p>"Before you embark on your birdwatching expedition, don't forget to pack binoculars, a field guide, and a keen sense of wonder. 
+                Costa Rica's birds are waiting to be discovered—let Beto be your guide to unlock their secrets."
+            </p>
+
+            <p>"Experience the allure of Costa Rica's birds in a creative and attractive way. 
+                Let our passion for birdwatching and the expertise of Beto transform your journey into a mesmerizing adventure."
+            </p>
+
+
+    </div>
+
+    <h2>More places for our tourings and visits.</h2>
+    
+    <div id="slider">
+        <input type="radio" name="slider" id="slide1" checked>
+        <input type="radio" name="slider" id="slide2">
+        <input type="radio" name="slider" id="slide3">
+        <input type="radio" name="slider" id="slide4">
+        <div id="slides">
+            <div id="overflow">
+                <div class="inner">
+
+                    <div class="slide slide_1">
+                        <div class="slide-content1">
+                            <h2>Caño Negro Wildlife Refugee</h2>
+                        </div>
+                    </div>
+                    <div class="slide slide_2">
+                        <div class="slide-content2">
+                            <h2>Carara National Park</h2>
+                        </div>
+                    </div>
+                    <div class="slide slide_3">
+                        <div class="slide-content3">
+                            <h2>Sarapiqui La Selva Biological Station</h2>
+                        </div>
+                    </div>
+                    <div class="slide slide_4">
+                        <div class="slide-content4">
+                            <h2>Arenal Volcano National Park</h2>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div id="controls">
+            <label for="slide1"></label>
+            <label for="slide2"></label>
+            <label for="slide3"></label>
+            <label for="slide4"></label>
+        </div>
+        <div id="bullets">
+            <label for="slide1"></label>
+            <label for="slide2"></label>
+            <label for="slide3"></label>
+            <label for="slide4"></label>
+
+        </div>
+
+    </div> 
+
+    <script type="text/javascript">
+
+        let layer_1 = document.querySelector('.layer-1');
+        let layer_2 = document.querySelector('.layer-2');
+        let layer_3 = document.querySelector('.layer-3');
+        let layer_4 = document.querySelector('.layer-4');
+        let layer_5 = document.querySelector('.layer-5');
+        let layer_6 = document.querySelector('.layer-6');
+        let layer_7 = document.querySelector('.layer-7');
+        
+        window.onscroll = function () {
+            let Y = window.scrollY;
+
+            layer_1.style.transform = 'translateY('+ Y/1.5 +'px)';
+            layer_2.style.transform = 'translateY('+ Y/2 +'px)';
+            layer_3.style.transform = 'translateY('+ Y/1.5 +'px)';
+            layer_4.style.transform = 'translateX('+ Y/2 +'px)';
+            layer_5.style.transform = 'translateY('+ Y/3 +'px)';
+            layer_6.style.transform = 'translateY('+ Y/5 +'px)';
+            layer_7.style.transform = 'translateY('+ Y/3 +'px)';
+            
+        }
+
+    </script>
+    
+</body>
+
+</html>
